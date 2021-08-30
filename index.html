@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Robo Fighters</title>
+</head>
+
+<body>
+    <!-- Modal Vitória Resultado-->
+    <div class="modal" id="vitoriaJ1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="col-12 modal-title text-center" id="exampleModalLongTitle">FIM DE JOGO </h5>
+                </div>
+                <div class="col-12 modal-body text-center">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="col-12 btn btn-fim-de-jogo text-center" data-dismiss="modal">Jogar
+                        Novamente?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="hud">
+            <div class="vidas">
+                <div class="jogadores-info">
+                    <div class="jogador1">
+                        <p>Jogador 1</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated barra-vida-jogador1"
+                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="meio-hud">
+                    <div class="placar-impactos">
+                        <p class="impactos"></p>
+                    </div>
+                    <div class="placar-resultado">
+                        <p class="resultado"></p>
+                    </div>
+                </div>
+                <div class="jogadores-info">
+                    <div class="jogador2">
+                        <p>Jogador 2</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning barra-vida-jogador2"
+                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas class="palco" width="960px" height="500px"></canvas>
+</body>
+
+</html>
